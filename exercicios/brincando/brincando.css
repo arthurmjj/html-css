@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #4f46e5, #9f7aea);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glassmorphism Card */
+.container {
+    padding: 20px;
+}
+
+.card {
+    width: 350px;
+    padding: 35px 25px;
+    border-radius: 22px;
+    text-align: center;
+    animation: fadeIn 1.2s ease;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 25px 55px rgba(0, 0, 0, .25);
+}
+
+/* Avatar */
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 18px;
+}
+
+/* Nome e título */
+.user-name {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+.user-role {
+    color: #e0e0e0;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: 6px;
+    margin-bottom: 25px;
+}
+
+/* Links */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.links a {
+    color: white;
+    background: rgba(255,255,255,0.17);
+    padding: 10px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: .35s;
+    border: 1px solid rgba(255,255,255,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.links a:hover {
+    background: white;
+    color: #4f46e5;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* Animação */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
