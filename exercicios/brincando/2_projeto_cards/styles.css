@@ -14,6 +14,15 @@ body{
     justify-content: center;
     gap: 20px;
 }
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.user-card:hover{
+    background-color: lightgray;
+}
 
 .user-card{
     display: flex;
